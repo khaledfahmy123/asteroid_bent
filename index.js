@@ -12,7 +12,7 @@ var onData = "";
 
 app.on("ready", () => {
   mainWin = new BrowserWindow({
-    icon: path.join(__dirname, "/assets/logo.png"),
+    icon: path.join(__dirname, "/assets/as.png"),
     webPreferences: {
       nodeIntegration: false,
     },

@@ -89,6 +89,7 @@ const changeObj = (e) => {
       }
     });
 
+    modelC.add(mdl.rotation, "y", -12, 12);
     scene.add(mdl);
   });
 
@@ -102,7 +103,6 @@ const openGui = (e) => {
 };
 
 // openGui();
-
 $(".card").click((e) => {
   $("#chart").remove();
   $(".card").removeClass("obj-active");

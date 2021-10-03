@@ -8,10 +8,10 @@
     "start": "electron .",
     "electron": "ELECTRON_DISABLE_SECURITY_WARNINGS=true electron .",
     "package": "asar pack TQ-win32-x64/resources/app TQ-win32-x64/resources/app.asar",
-    "build": "electron-packager . TQ"
+    "build": "electron-packager . Asteroid Bent"
   },
   "keywords": [],
-  "author": "khaled",
+  "author": "khaled Fahmy, Mohamed Rezk",
   "license": "ISC",
   "devDependencies": {
     "asar": "^3.0.3",

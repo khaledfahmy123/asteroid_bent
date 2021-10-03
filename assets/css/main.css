@@ -44,4 +44,5 @@ canvas {
 }
 div.dg.ac {
   z-index: 2;
+  /* display: none; */
 }
