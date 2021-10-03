@@ -1,0 +1,235 @@
+:root {
+  --brdr-solid-: rgba(25, 25, 25, 1);
+  --brdr-: rgba(25, 25, 25, 0.6);
+}
+
+.menu-btn {
+  --w: 60px;
+  height: var(--w);
+  width: var(--w);
+  position: fixed;
+  z-index: 2;
+  background: rgba(30, 67, 75, 0.5);
+  border: 3px solid var(--clr-d-sea);
+  color: var(--clr-sea);
+  border-radius: 50%;
+  font-size: 25px;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.menu-btn:hover {
+  background: rgba(30, 67, 75, 1);
+}
+
+.menu-sec {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: url("./../imgs/bg/bg_main_1.jpg") no-repeat center center; */
+  /* background-size: cover; */
+  background: #020202;
+  z-index: 5;
+  display: flex;
+  display: none;
+}
+
+.menu-sec::before {
+  /* content: ""; */
+  position: absolute;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.menu-sec nav {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-sec nav ul {
+  list-style-type: none;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 0 0 50px; */
+}
+
+nav ul li,
+nav button {
+  height: var(--choose-w);
+  line-height: var(--choose-w);
+  width: 230px;
+  position: relative;
+  font-size: 30px;
+  color: #fff;
+  margin: 0 0 30px;
+  background: rgba(65, 65, 65, 0.59);
+  cursor: pointer;
+  padding: 0 46px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: tahoma;
+  transition: all 0.2s ease;
+  border-radius: 17px;
+}
+
+nav span {
+  --w: var(--choose-w);
+  display: inline-flex;
+  width: var(--w);
+  height: var(--w);
+  background: rgba(8, 58, 88, 1);
+  background: rgba(65, 65, 65, 0.59);
+  /* border: 2px solid var(--clr-d-greensh); */
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  left: calc(var(--choose-w) * -0.7);
+  top: calc(var(--w) / 2);
+  color: var(--clr-greensh);
+  transition: all 0.2s ease;
+}
+
+nav li:hover,
+nav li:hover span,
+nav button:hover,
+nav button:hover span {
+  background: rgba(8, 70, 108, 1);
+}
+
+nav button {
+  width: calc(var(--choose-w) * 4.8);
+  padding: 0;
+  font-size: 25px;
+  border: none;
+  outline: none;
+}
+
+nav button span {
+  font-size: 35px;
+  transform: translate(-50%, -50%) scale(-1, -1);
+}
+
+main {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+main section {
+  padding: 40px 40px;
+  width: 100%;
+  min-height: 65%;
+  max-height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* background: rgba(8, 70, 108, 1); */
+  background: rgb(52, 52, 52);
+  background-color: rgba(65, 65, 65, 0.59);
+  /* border: 2px solid; */
+  /* border-image-slice: 1; */
+  /* border-width: 2px; */
+  /* border-image-source: linear-gradient(to left, #2553b1, #3d6ac8); */
+  overflow-y: scroll;
+  border-radius: 15px;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 20px 0;
+  margin-right: 40px;
+  border: 2px solid var(--brdr-solid-);
+  /* border-bottom-right-radius: 40px; */
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  /* background: rgba(8, 70, 108, 0.6); */
+  background: var(--brdr-);
+  color: #fff;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card:hover span {
+  /* background: rgba(21, 145, 221, 1); */
+  background: var(--brdr-solid-);
+}
+
+.card span:last-of-type {
+  display: none;
+}
+
+.obj-active {
+  border: 2px solid rgba(33, 142, 90, 1);
+}
+
+.obj-active span {
+  background: rgba(33, 142, 90, 1);
+}
+
+.obj-active span:last-of-type {
+  display: block;
+}
+
+.obj-active:hover span {
+  background: rgba(28, 209, 123, 1);
+}
+.obj-active:hover {
+  border: 2px solid rgba(28, 209, 123, 1);
+}
+
+/*==========================Scroll Bar============================*/
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4b7681;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #52e9e6;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

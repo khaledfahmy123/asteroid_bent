@@ -1,0 +1,47 @@
+:root {
+  --clr-blue: #2fa1d6;
+  --clr-sea: #37b6cf;
+  --clr-d-sea: #1e434b;
+  --clr-greensh: #0bd6e6;
+  --clr-d-greensh: #105581;
+  --clr-vd-greensh: rgba(8, 58, 88, 1);
+  --choose-w: 55px;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../imgs/bg/bg6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+canvas {
+  position: absolute;
+  z-index: 1;
+}
+div.dg.ac {
+  z-index: 2;
+}

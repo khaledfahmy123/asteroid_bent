@@ -1,0 +1,21 @@
+section#chart {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: rgba(30, 67, 75, 0.4);
+  color: #fff;
+  z-index: 4;
+}
+
+section#chart text {
+  color: #fff;
+  fill: var(--clr-sea);
+}
+
+section#chart .apexcharts-gridline {
+  stroke: #343434;
+}
+
+#realtime {
+  width: 100%;
+}

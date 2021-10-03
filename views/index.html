@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>AS-BENT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/chart.css" />
+    <link rel="stylesheet" href="../assets/css/nav.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <section id="mian">
+      <canvas id="canv"></canvas>
+      <button type="button" name="menu" class="menu-btn">
+        <i class="fas fa-hammer"></i>
+      </button>
+    </section>
+    <section class="chart-cont">
+      <section id="chart"></section>
+    </section>
+
+    <script>
+      if (typeof module === "object") {
+        window.module = module;
+        module = undefined;
+      }
+    </script>
+    <script src="../assets/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script type="module" src="../assets/js/structure.js"></script>
+    <script type="module" src="../assets/js/main.js"></script>
+    <script type="module" src="../assets/js/chart.js"></script>
+
+    <script>
+      if (window.module) module = window.module;
+    </script>
+  </body>
+</html>
